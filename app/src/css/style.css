@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  li 
+  {
+      list-style-type: none;
+  }
+  
+  li a 
+  {
+      color: white;
+  }
+  
+  @media only screen and (-webkit-min-device-pixel-ratio: 1) and (min-device-width: 0px) and (max-device-width: 768px) {
+    body {
+      overflow-x: hidden;
+    }
+  
+    .burger {
+      border: 2px solid white;
+      border-radius: 5px;
+    }
+  
+    .navbar {
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 10vh;
+    }
+  
+    /* for the ul styline */
+    .nav_ul {
+      position: absolute;
+      right: 0px;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      top: 8vh;
+      align-items: center;
+      color: white;
+      list-style-type: none;
+      background-color: black;
+      width: 50%;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+    }
+  
+    .logo {
+      font-family: 'Playfair Display SC', serif;
+    }
+  
+    .nav_ul li {
+      opacity: 0;
+    }
+  
+    .burger div {
+      background-color: white;
+      width: 25px;
+      height: 3px;
+      margin: 5px;
+      transition: all 0.3s ease;
+    }
+  
+    .nav-active {
+      transform: translateX(0%);
+    }
+  
+    @keyframes navLinkFade {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    }
+  
+    .toggle .line1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .toggle .line2 {
+      opacity: 0;
+    }
+  
+    .toggle .line3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+  
+  /* --------------------------------Tab / Ipad -----------------------------------------*/
+  @media only screen and (-webkit-min-device-pixel-ratio: 1) and (min-device-width: 768px) and (max-device-width: 1007px) 
+  {
+  
+  
+      body 
+      {
+          display: flex;
+      }
+      header
+      {
+          display: flex;
+          flex-direction: column;
+          width:18%;
+          height: 100%;
+          background-color: black;
+      }
+  
+      div.container
+      {
+          background-color:white;
+      }
+      .navbar {
+          height: 100vh;
+          color: white;
+          display: flex;
+          flex-direction: column;
+        }
+  
+  
+  
+      .logo 
+      {
+         
+          font-family: 'Playfair Display SC', serif;
+          padding-top: 20px;
+          text-align: center;
+          height:10%;
+      }
+  
+    .nav_ul 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height:60%;
+        padding-bottom: 50px;
+  
+    }
+  
+  
+  
+  }
+  
+  /* ----------------------------Laptop -------------------------------------*/
+  /* this orientation is for laptop */
+  /* For 1024 Resolution */
+  @media only screen and (min-width: 1008px) and (max-width: 1605px) {
+    .navbar {
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 10vh;
+    }
+  
+    /* for the ul styline */
+    .nav_ul {
+      display: flex;
+      align-items: center;
+      color: white;
+      list-style-type: none;
+      background-color: black;
+      justify-content: space-around;
+    }
+  
+    .nav_ul li {
+      padding: 10px;
+      margin-right: 20px;
+      border-radius: 5px;
+      border: 2px solid white;
+    }
+  
+    .logo {
+      font-size: 25px;
+      font-family: 'Playfair Display SC', serif;
+    }
+  
+    /* individual links setting --------------------------*/
+    .link_one 
+    {
+        background-image: url("/img/twitter_icons/twitter.png");
+    }
+  }
+  
+  /* -----------------------------------Desktop -----------------------------------------*/
+  /* this orientation is for desk top */
+  /*
+  @media only screen   
+  and (min-width: 1370px)  
+  and (max-width: 1605px)  
+  { 
+  
+  } 
+  */
+  
+  /* For mobile use if necessary  */
+  /*
+  @media only screen   
+  and (min-device-width : 360px)   
+  and (max-device-width : 640px)  
+  {
+      
+  }  
+  */
+  
